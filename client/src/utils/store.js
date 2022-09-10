@@ -1,10 +1,10 @@
 // TODO: import createStore from 'redux' and the reducers from './reducers'
 import { createStore } from 'redux';
 import { ADD_MULTIPLE_TO_CART, ADD_TO_CART, CLEAR_CART, REMOVE_FROM_CART, TOGGLE_CART, UPDATE_CART_QUANTITY, UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY, UPDATE_PRODUCTS } from './actions';
-import { reducers } from './reducers';
+import reducer from './reducers';
 // TODO: setup createStore to take in the reducers and export the function
 
-let store = createStore(reducers);
+let store = createStore(reducer);
 
 // store.subscribe(() => console.log(store.getState()));
 
